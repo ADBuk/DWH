@@ -6,11 +6,11 @@ CREATE VIEW public.gmw AS
 			purchase_items.product_count * purchase_items.product_price
 			) AS gmw_val
 	FROM purchase_items
-	INNER JOIN 
+	LEFT JOIN 
 		products 
 	ON
 		 products.product_id = purchase_items.product_id 
-	INNER JOIN 
+	LEFT JOIN 
 		purchases  
 	ON 
 		purchase_items.purchase_id = purchases.purchase_id
