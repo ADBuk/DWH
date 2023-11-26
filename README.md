@@ -1,5 +1,5 @@
 # DWH
-HSE DWH Course
+HSE DWH Course HW1
 ### Запуск
 ```
 sh docker-init.sh
