@@ -3,7 +3,7 @@ CREATE VIEW public.gmw AS
 		purchases.store_id,
 		products.category_id,
 		SUM(
-			purchase_items.product_price * purchase_items.product_count
+			purchase_items.product_count * purchase_items.product_price
 			) AS gmw_val
 	FROM purchase_items
 	INNER JOIN 
